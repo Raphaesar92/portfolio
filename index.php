@@ -3,9 +3,11 @@ include("assets/header.php");
 ?>
 
 <body>
+
     <?php
     include("assets/head.php");
     ?>
+
     <main>
         <section class="topo-do-site">
             <div class="interface">
@@ -24,7 +26,6 @@ include("assets/header.php");
                             </a>
                         </div>
                     </div><!--txt-topo-site-->
-
                     <div class="img-topo-site">
                         <img src="images/foto_perfil.png" alt="">
 
@@ -117,9 +118,11 @@ include("assets/header.php");
             </div>
         </section>
     </main>
+
     <?php
     include("assets/footer.php");
     ?>
+
 </body>
 
 </html>

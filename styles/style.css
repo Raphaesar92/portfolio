@@ -91,7 +91,7 @@ header nav.menu-desktop ul li {
 }
 
 .menu-mobile {
-    background-color: #000;
+    background-color: #fc1723;
     height: 100vh;
     position: fixed;
     top: 0;
@@ -116,7 +116,7 @@ header nav.menu-desktop ul li {
 }
 
 .menu-mobile .btn-fechar i {
-    color: #fc1723;
+    color: #000;
     font-size: 30px;
 }
 
@@ -192,39 +192,36 @@ section.topo-do-site .flex {
 }
 
 /* ESTILO DAS ESPECIALIDADES */
-section.especialidades {
+section.especiliadades {
     padding: 40px 4%;
-
 }
 
-section.especialidades .flex {
+section.especiliadades .flex {
     gap: 60px;
 }
 
-.especialidades .especialidades-box {
+.especiliadades .especialidades-box {
     color: #fff;
     padding: 40px;
-    border: 2px solid #fff;
-    margin-top: 45px;
     border-radius: 20px;
+    margin-top: 45px;
     transition: .2s;
 }
 
-.especialidades .especialidades-box:hover {
+.especiliadades .especialidades-box:hover {
     transform: scale(1.05);
-    box-shadow: 0px 0px 20px #ffffff4f;
+    box-shadow: 0 0 20px #ffffff78;
 }
 
-.especialidades .especialidades-box i {
+.especiliadades .especialidades-box i {
     font-size: 70px;
     color: #fc1723;
 }
 
-.especialidades .especialidades-box h3 {
+.especiliadades .especialidades-box h3 {
     font-size: 28px;
     margin: 15px 0;
 }
-
 
 /* ESTILO DO SOBRE */
 section.sobre {
@@ -256,6 +253,10 @@ section.sobre .flex {
     text-align: justify;
 }
 
+.img-sobre img {
+    border-radius: 33px;
+}
+
 .btn-social button {
     width: 60px;
     height: 60px;
@@ -268,9 +269,7 @@ section.sobre .flex {
     transition: .2s;
 }
 
-.img-sobre img {
-    border-radius: 33px;
-}
+
 
 /* ESTILO DO PORTFÓLIO */
 section.portfolio {
@@ -392,6 +391,7 @@ footer .line-footer p i {
 
 footer .line-footer p a {
     color: #fff;
+    text-decoration: none;
 }
 
 @media screen and (max-width: 1020px) {
@@ -413,7 +413,7 @@ footer .line-footer p a {
     /* CABEÇALHO */
     .menu-desktop,
     .btn-contato {
-        flex-direction: column;
+        display: none;
     }
 
     /* TOPO DO SITE */
@@ -481,5 +481,51 @@ footer .line-footer p a {
 
     footer .line-footer {
         text-align: center;
+    }
+
+    /* Ocultar o menu desktop */
+    .menu-desktop {
+        display: none;
+    }
+
+    /* Exibir o botão de abrir o menu */
+    .btn-abrir-menu {
+        display: block;
+        cursor: pointer;
+    }
+
+    /* Ajustar o menu móvel */
+    .menu-mobile {
+        width: 0%;
+    }
+
+    /* Mostrar o menu móvel quando ativado */
+    .menu-mobile.abrir-menu {
+        width: 70%;
+    }
+
+    .menu-mobile .btn-fechar i {
+        font-size: 30px;
+    }
+
+    .menu-mobile nav ul {
+        padding: 0;
+        list-style: none;
+    }
+
+    .menu-mobile nav ul li a {
+        color: #fff;
+        font-size: 20px;
+        padding: 20px 8%;
+        display: block;
+        text-align: left;
+    }
+
+    .overlay-menu {
+        display: none;
+    }
+
+    .menu-mobile.abrir-menu~.overlay-menu {
+        display: block;
     }
 }
