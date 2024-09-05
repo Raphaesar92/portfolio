@@ -108,11 +108,11 @@ include("assets/header.php");
             <div class="interface">
                 <h2 class="titulo">FALE<span>COMIGO</span></h2>
 
-                <form action="">
-                    <input type="text" name="" id="" placeholder="Seu nome" required>
-                    <input type="text" name="" id="" placeholder="Seu e-mail" required>
-                    <input type="text" name="" id="" placeholder="Seu celular">
-                    <textarea name="" id="" placeholder="Sua mensagem" required></textarea>
+                <form method="POST" action="enviar.php">
+                    <input type="text" name="nome" id="nome" placeholder="Seu nome" required>
+                    <input type="text" name="email" id="email" placeholder="Seu e-mail" required>
+                    <input type="text" name="phone" id="phone" placeholder="Seu celular">
+                    <textarea name="message" id="message" placeholder="Sua mensagem" required></textarea>
                     <div class="btn-enviar"><input type="submit" value="ENVIAR"></div>
                 </form>
             </div>
