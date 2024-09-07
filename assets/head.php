@@ -15,6 +15,11 @@
     <link rel="stylesheet" href="styles/style.css">
 
     <script src="menu.js" defer></script>
+    <script src="mask.js" defer></script>
+    
+    <script src="js/dist/inputmask.min.js"></script>
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/inputmask/5.0.7-beta.19/inputmask.min.js"></script> -->
 
     <title>Portfólio - Raphael Ferreira Casarini</title>
 

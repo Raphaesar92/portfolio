@@ -21,9 +21,7 @@ include("assets/header.php");
                         </p>
 
                         <div class="btn-contato">
-                            <a href="#">
-                                <button>Entre em contato</button>
-                            </a>
+                            <button id="btnContato_Secundario">Entre em contato</button>
                         </div>
                     </div><!--txt-topo-site-->
                     <div class="img-topo-site">
@@ -104,7 +102,7 @@ include("assets/header.php");
             </div><!--interface-->
         </section><!--portofolio-->
 
-        <section class="formulario">
+        <section id="contato" class="formulario">
             <div class="interface">
                 <h2 class="titulo">FALE<span>COMIGO</span></h2>
 
@@ -112,7 +110,7 @@ include("assets/header.php");
                     <input type="text" name="nome" id="nome" placeholder="Seu nome" required>
                     <input type="text" name="email" id="email" placeholder="Seu e-mail" required>
                     <input type="text" name="phone" id="phone" placeholder="Seu celular">
-                    <textarea name="message" id="message" placeholder="Sua mensagem" required></textarea>
+                    <textarea name="message" id="message" placeholder="Sua mensagem" maxlength="255" required></textarea>
                     <div class="btn-enviar"><input type="submit" value="ENVIAR"></div>
                 </form>
             </div>

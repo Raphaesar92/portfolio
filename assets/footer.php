@@ -14,7 +14,7 @@
           </div><!--line-footer-->
 
           <div class="line-footer borda">
-              <p><i class="bi bi-envelope-fill"></i><a href="mailto:rafa.casarini@gmail.com">rafa.casarini@gmail.com</p>
+              <p><i class="bi bi-envelope-fill"></i><a href="mailto:rafa.casarini@portfoliocasarini.com.br">rafa.casarini@portfoliocasarini.com.br</p>
           </div><!--line-footer-->
       </div><!--interface-->
   </footer>
